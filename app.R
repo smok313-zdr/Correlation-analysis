@@ -27,7 +27,7 @@ ui <- fluidPage(
         ),
         mainPanel(
             tabsetPanel(id = "tab",type = "tabs",
-                        tabPanel("Tabela", DT::dataTableOutput("table.output")),
+                        tabPanel("Tabela", div(DT::dataTableOutput("table.output"),style = "font-size:180%")),
                         tabPanel("Macierz korelacji", uiOutput("cor1")),
                         tabPanel("Wizualizacja korelacji", uiOutput("cor2")),
                         tabPanel(names(panel_choices)[1], value = panel_choices[[1]], plotOutput("plot1")),
