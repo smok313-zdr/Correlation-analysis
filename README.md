@@ -1,5 +1,5 @@
 # Correlation analysis in R (Shiny app)
-Correlation analysis of data from csv file.
+Simple correlation analysis of data from a csv file.
 
 The analysis includes: correlation matrix and visualization using `ggplot2` and `lattice` package, with the ability to select significant variables.
 
